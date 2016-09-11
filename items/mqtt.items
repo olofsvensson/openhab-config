@@ -1,0 +1,4 @@
+Switch ledSwitch {mqtt=">[broker:/gpio/18:command:ON:HIGH],>[broker:/gpio/18:command:OFF:LOW]"}
+
+Number Temp "Temperature [%.1f]" {mqtt="<[broker:saloon/temperature:state:default]"}
+Number Humi "Humidity [%.1f]" {mqtt="<[broker:saloon/humidity:state:default]"}
